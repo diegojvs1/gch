@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Grupo C&H - Alquiler y servicios de maquinaria para construcción, minería y laboratorio">
+  <meta name="keywords" content="maquinaria, construcción, laboratorio, ingeniería, minería, servicios">
+  <title>Grupo C&H</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="img/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ENCABEZADO PRINCIPAL -->
+  <header class="main-header">
+    <div class="top-bar">
+      <div class="logo-box">
+        <img src="img/logo-cyh.png" alt="Logo Grupo C&H">        
+      </div>
+      <div class="contact-info">
+        <div><i class="fas fa-phone-alt"></i> 958153831 - 958121202</div>
+        <div><i class="fas fa-envelope"></i> informes.gchperu@gmail.com</div>
+      </div>
+    </div>
+
+    <nav class="nav-bar">
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <div class="redes">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CARRUSEL -->
+  <div class="carousel">
+    <div class="carousel-slides">
+      <img src="img/slide1.jpg" class="active" alt="Slide 1">
+      <img src="img/slide2.jpg" alt="Slide 2">
+      <img src="img/slide3.jpg" alt="Slide 3">
+    </div>
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+    <div class="carousel-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+
+  <!-- NOSOTROS -->
+  <section id="nosotros" class="seccion-nosotros">
+    <div class="contenedor">
+      <h2>Bienvenidos a Grupo C&H</h2>
+      <p>Somos una empresa peruana especializada en el alquiler y venta de maquinaria para construcción, minería, laboratorio de suelos y servicios de ingeniería. Con años de experiencia, garantizamos soluciones técnicas confiables y eficientes para tus proyectos.</p>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+<section id="servicios" class="servicios">
+  <h2>Nuestros Servicios</h2>
+  <div class="servicio-grid">
+
+    <div class="servicio">
+      <div class="servicio-img">
+        <img src="img/construccion.png" alt="Construcción">
+      </div>
+      <h3>Construcción</h3>
+      <div class="servicio-descripcion">
+        <p>Ofrecemos infraestructura moderna, segura y de calidad para todo tipo de obra civil.</p>
+        <a href="servicio-construccion.html" target="_blank" class="btn-ver-mas">Ver más</a>
+      </div>
+    </div>
+
+    <div class="servicio">
+      <div class="servicio-img">
+        <img src="img/innovacion.jpg" alt="Equipos de Innovación">
+      </div>
+      <h3>Equipos de Innovación</h3>
+      <div class="servicio-descripcion">
+        <p>Contamos con tecnología de vanguardia para optimizar procesos y resultados.</p>
+        <a href="servicio-innovacion.html" target="_blank" class="btn-ver-mas">Ver más</a>
+      </div>
+    </div>
+
+    <div class="servicio">
+      <div class="servicio-img">
+        <img src="img/laboratorio.jfif" alt="Laboratorio">
+      </div>
+      <h3>Laboratorio</h3>
+      <div class="servicio-descripcion">
+        <p>Realizamos análisis de suelos y materiales con equipos certificados y personal técnico.</p>
+        <a href="servicio-laboratorio.html" target="_blank" class="btn-ver-mas">Ver más</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- POR QUÉ ELEGIRNOS -->
+<section class="por-que-elegirnos">
+  <h2>¿Por qué elegirnos?</h2>
+  <div class="ventajas-grid">
+    <div class="ventaja" onclick="toggleVentaja(this)">
+      <i class="fas fa-tools icono"></i>
+      <h3>Equipos modernos</h3>
+      <p class="descripcion">Ofrecemos equipos tecnológicos de última generación para asegurar eficiencia y precisión en tus proyectos.</p>
+    </div>
+
+    <div class="ventaja" onclick="toggleVentaja(this)">
+      <i class="fas fa-user-check icono"></i>
+      <h3>Personal capacitado</h3>
+      <p class="descripcion">Profesionales altamente especializados en construcción, minería y laboratorio.</p>
+    </div>
+
+    <div class="ventaja" onclick="toggleVentaja(this)">
+      <i class="fas fa-clock icono"></i>
+      <h3>Puntualidad</h3>
+      <p class="descripcion">Cumplimos con los plazos establecidos con compromiso y eficiencia.</p>
+    </div>
+
+    <div class="ventaja" onclick="toggleVentaja(this)">
+      <i class="fas fa-handshake icono"></i>
+      <h3>Atención personalizada</h3>
+      <p class="descripcion">Ofrecemos soluciones a medida adaptadas a tus requerimientos específicos.</p>
+    </div>
+  </div>
+</section>
+
+  <!-- CLIENTES -->
+<section class="clientes">
+  <h2>Empresas que confían en nosotros</h2>
+  <div class="carousel-logos">
+    <div class="logo-track">
+      <img src="img/logo-cyh.png" alt="Cliente 1">
+      <img src="img/USMPN.png" alt="Cliente 2">
+      <img src="img/Escudo_UNSA.png" alt="Cliente 3">
+      <img src="img/logo-cyh.png" alt="Cliente 4">
+      <img src="img/USMPN.png" alt="Cliente 5">
+      <img src="img/Escudo_UNSA.png" alt="Cliente 6">
+      
+      <!-- duplicados para bucle -->
+      <img src="img/logo-cyh.png" alt="Cliente 1">
+      <img src="img/USMPN.png" alt="Cliente 2">
+      <img src="img/Escudo_UNSA.png" alt="Cliente 3">
+      <img src="img/logo-cyh.png" alt="Cliente 4">
+      <img src="img/USMPN.png" alt="Cliente 5">
+      <img src="img/Escudo_UNSA.png" alt="Cliente 6">
+    </div>
+  </div>
+</section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="contacto">
+    <h2>Contáctanos</h2>
+    <form id="formulario-contacto">
+  <div class="campo-formulario">
+    <i class="fas fa-user"></i>
+    <input type="text" name="name" placeholder="Tu nombre" required>
+  </div>
+  <div class="campo-formulario">
+    <i class="fas fa-envelope"></i>
+    <input type="email" name="email" placeholder="Tu correo electrónico" required>
+  </div>
+  <div class="campo-formulario">
+    <i class="fas fa-user"></i>
+    <input type="text" name="phone" placeholder="Tu # de celular" required>
+  </div>
+  <div class="campo-formulario">
+    <i class="fas fa-comment-dots"></i>
+    <textarea name="message" placeholder="Escribe tu mensaje..." rows="5" required></textarea>
+  </div>
+  <button type="submit" class="btn-enviar">Enviar mensaje</button>
+  <p id="mensaje-envio" class="mensaje-envio"></p>
+</form>
+    <div class="info-extra">
+      <p><i class="fas fa-map-marker-alt"></i> Arequipa, Perú</p>
+      <p><i class="fas fa-phone"></i> 958153831 - 958121202</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-contenido">
+      <p>&copy; 2025 Grupo C&H - Todos los derechos reservados.</p>
+      <div class="redes">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="modal-confirmacion" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar" onclick="cerrarModal('modal-confirmacion')">&times;</span>
+    <h3>¡Gracias por tu mensaje!</h3>
+    <p>Tu mensaje fue recibido por nuestro equipo. Nos pondremos en contacto contigo lo más pronto posible.</p>
+  </div>
+</div>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

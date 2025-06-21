@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Grupo C&H - Alquiler y servicios de maquinaria para construcción, minería y laboratorio">
+  <meta name="keywords" content="maquinaria, construcción, laboratorio, ingeniería, minería, servicios">
+  <title>Grupo C&H</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="img/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="top-bar">
+      <div class="logo-box">
+        <img src="img/logo-cyh.png" alt="Logo Grupo C&H">        
+      </div>
+      <div class="contact-info">
+        <div><i class="fas fa-phone-alt"></i> 958153831 - 958121202</div>
+        <div><i class="fas fa-envelope"></i> informes.gchperu@gmail.com</div>
+      </div>
+    </div>
+
+    <nav class="nav-bar">
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <div class="redes">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- SECCIÓN SERVICIOS CON MODALES -->
+<section id="servicios" class="seccion-servicios">
+  <div class="contenedor-servicios">
+    <h2 class="titulo-servicios">Nuestros Servicios</h2>
+    <p class="descripcion-servicios">En Grupo C&H ofrecemos soluciones integrales en maquinaria, laboratorio de suelos y servicios de ingeniería.</p>
+
+    <div class="grid-servicios">
+
+      <!-- Servicio 1 -->
+      <div class="tarjeta-servicio">
+        <i class="fas fa-hard-hat"></i>
+        <h3>Construcción</h3>
+        <p>Maquinaria para obras civiles con soporte técnico.</p>
+        <button class="btn-servicio" onclick="abrirModal('modal1')">Ver más</button>
+      </div>
+
+      <!-- Servicio 2 -->
+      <div class="tarjeta-servicio">
+        <i class="fas fa-flask"></i>
+        <h3>Laboratorio de Suelos</h3>
+        <p>Ensayos técnicos confiables con equipos certificados.</p>
+        <button class="btn-servicio" onclick="abrirModal('modal2')">Ver más</button>
+      </div>
+
+      <!-- Servicio 3 -->
+      <div class="tarjeta-servicio">
+        <i class="fas fa-cogs"></i>
+        <h3>Equipos de Innovación</h3>
+        <p>Alquiler de tecnología avanzada para tus proyectos.</p>
+        <button class="btn-servicio" onclick="abrirModal('modal3')">Ver más</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MODALES -->
+<div id="modal1" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar" onclick="cerrarModal('modal1')">&times;</span>
+    <h3>Servicio de Construcción</h3>
+    <img src="img/construccion.png" alt="Construcción">
+    <p>Brindamos maquinaria pesada y liviana para todo tipo de obras civiles, con mantenimiento y asesoría técnica personalizada. Nuestro compromiso es garantizar eficiencia, seguridad y cumplimiento de plazos.</p>
+    <a href="contacto.html" class="btn-cotizar">Cotizar ahora</a>
+  </div>
+</div>
+
+<div id="modal2" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar" onclick="cerrarModal('modal2')">&times;</span>
+    <h3>Laboratorio de Suelos</h3>
+    <img src="img/laboratorio.jfif" alt="Laboratorio">
+    <p>Contamos con laboratorio equipado para análisis de suelos, agregados y concreto. Emitimos informes técnicos precisos, esenciales para estudios geotécnicos y control de calidad.</p>
+    <a href="contacto.html" class="btn-cotizar">Cotizar ahora</a>
+  </div>
+</div>
+
+<div id="modal3" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar" onclick="cerrarModal('modal3')">&times;</span>
+    <h3>Equipos de Innovación</h3>
+    <img src="img/innovacion.jpg" alt="Innovación">
+    <p>Ofrecemos el alquiler de equipos modernos como estaciones totales, densímetros nucleares y compactadores. Ideal para ingeniería, topografía y laboratorio de control de calidad.</p>
+    <a href="contacto.html" class="btn-cotizar">Cotizar ahora</a>
+  </div>
+</div>
+
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-contenido">
+      <p>&copy; 2025 Grupo C&H - Todos los derechos reservados.</p>
+      <div class="redes">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -22,11 +22,11 @@ document.addEventListener("DOMContentLoaded", function () {
   // ============================
   // EMAILJS: Envío de formulario
   // ============================
-  emailjs.init("BHpk4h0_wyh0Ume_R"); // Reemplaza con tu EmailJS User ID
 
   const form = document.getElementById("formulario-contacto");
 
   if (form) {
+    emailjs.init("BHpk4h0_wyh0Ume_R"); // Reemplaza con tu EmailJS User ID
     form.addEventListener("submit", function (e) {
   e.preventDefault();
 

@@ -25,6 +25,7 @@ html, body {
   background-color: white;
   flex-wrap: wrap;
   gap: 10px;
+    height: auto;
 }
 
 .logo-box {

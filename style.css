@@ -875,35 +875,35 @@ html, body {
 }
 
 .modal-contenido {
+  background-color: #fff;
+  margin: 80px auto;
+  padding: 30px;
+  border-radius: 16px;
   max-width: 600px;
-  margin: auto;
-  background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
   position: relative;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  animation: slideUp 0.4s ease;
 }
 
 .modal-contenido h3 {
-  color: #0b4a91; /* Azul corporativo */
-  margin-top: 0;
+  margin-bottom: 15px;
+  color: #006494;
 }
 
 .modal-contenido img {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
   max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
   margin-bottom: 15px;
 }
 
 .modal-contenido p {
-  color: #555;
-  font-size: 15px;
-  line-height: 1.5;
+  color: #444;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.6;
 }
-
 
 .btn-cotizar {
   background-color: #006494;

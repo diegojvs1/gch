@@ -892,11 +892,14 @@ html, body {
 
 .modal-contenido img {
   width: 100%;
-  max-height: 220px;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  height: auto;
+  max-height: 300px;
   border-radius: 12px;
   margin-bottom: 20px;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 

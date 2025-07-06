@@ -35,7 +35,7 @@ html, body {
 }
 
 .logo-box img {
-  height: 200px; /* Aumenta este valor según lo que necesites */
+  height: 100px; /* Aumenta este valor según lo que necesites */
   width: auto;  /* Mantiene la proporción del logo */
 }
 

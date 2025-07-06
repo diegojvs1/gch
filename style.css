@@ -143,6 +143,33 @@ html, body {
   overflow: hidden;
 }
 
+.carousel-slides {
+  position: relative;
+  width: 100%;
+  height: 400px; /* ajusta según lo que quieras */
+}
+
+.carousel-slide {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-slide.active {
+  display: block;
+  opacity: 1;
+  z-index: 2;
+}
+
 .carousel-slides img {
   width: 100%;
   height: 400px;

@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // ============================
   // Carrusel de imágenes
   // ============================
-  const slides = document.querySelectorAll('.carousel-slides img');
+  const slides = document.querySelectorAll('.carousel-slide');
   const dots = document.querySelectorAll('.carousel-dots .dot');
   let index = 0;
 

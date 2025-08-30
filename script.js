@@ -26,11 +26,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("formulario-contacto");
 
   if (form) {
-    emailjs.init("BHpk4h0_wyh0Ume_R"); // Reemplaza con tu EmailJS User ID
+    emailjs.init("VOhKVICvLzE7XucpD"); // Reemplaza con tu EmailJS User ID
     form.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  emailjs.sendForm("service_5wfzgdh", "template_p5wcypd", this)
+  emailjs.sendForm("service_fcqkfbm", "template_sz8e00u", this)
       .then(() => {
         abrirModal('modal-confirmacion');
         form.style.display = 'none';
